@@ -112,7 +112,7 @@ window.addEventListener('scroll', scrollTop);
 const sr = ScrollReveal({
     origin: 'top',
     distance: '30px',
-    duration: 1000,
+    duration: 1000
 });
 
 const targets = '.home__data,'
@@ -131,11 +131,8 @@ sr.reveal(targets,{
 });
 
 /*==================== FUNCTIONAL CONTACT FORM WITH FORMSPREE.IO ====================*/
-
-
 $('.submit').click(function(e){
-    
-    var mail = $('.b').val();
+    var mail = $('.mail').val();
     var subject = $('.subject').val();
     var message = $('.message').val();
     var StatusElm = $('.status');
@@ -156,3 +153,7 @@ $('.submit').click(function(e){
         StatusElm.append('<div style="color : var(--first-color); text-align:center;">Le message n\'est pas valide</div>');
     }
 })
+
+$(".sélecteur").val();
+
+
